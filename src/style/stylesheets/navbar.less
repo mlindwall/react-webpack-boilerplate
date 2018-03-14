@@ -16,27 +16,32 @@
 }
 
 .navbar--link {
-  color: $black-06;
+  text-decoration: none;
+  color: @black-06;
   cursor: pointer;
   margin-left: 16px
 }
 
+.navbar--link, a {
+  text-decoration: none;
+}
+
 .navbar--link:hover {
-  color: $black-08;
+  color: @black-08;
 }
 
 .search-field {
   border: 0;
   font-size: 12px;
   padding-bottom: 1px;
-  border-bottom: 1px solid $black-04;
+  border-bottom: 1px solid @black-04;
 }
 
 .search-field:hover {
-  border-color: $black-08;
+  border-color: @black-08;
 }
 
 .search-field:focus {
   outline: 0;
-  border-color: $black-06;
+  border-color: @black-06;
 }

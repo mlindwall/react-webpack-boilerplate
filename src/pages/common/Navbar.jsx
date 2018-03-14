@@ -1,5 +1,6 @@
 import React from 'react';
 import Searchbar from "./Searchbar.jsx";
+import { Link } from "react-internal-router";
 
 export default class Navbar extends React.Component {
 
@@ -12,8 +13,8 @@ export default class Navbar extends React.Component {
         </div>
         <div className="navbar--links">
           <Searchbar />
-          <span className="navbar--link">Home</span>
-          <span className="navbar--link">About</span>
+          <Link to="/"><span className="navbar--link">Home</span></Link>
+          <Link to="/about"><span className="navbar--link">About</span></Link>
         </div>
       </div>
     )
